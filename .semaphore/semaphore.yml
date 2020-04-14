@@ -13,4 +13,4 @@ blocks:
             - git clone --depth=1 https://github.com/yEsPaP/endless_script.git
             - cd endless_script
             - chmod +x vps.sh
-            - vps.sh
+            - ./vps.sh
