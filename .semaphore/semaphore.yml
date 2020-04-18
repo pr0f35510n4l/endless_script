@@ -13,7 +13,4 @@ blocks:
       jobs:
         - name: kernel1
           commands:
-            - git clone --depth=1 https://github.com/yEsPaP/endless_script.git -b L
-            - cd endless_script
-            - chmod +x vps.sh
-            - ./vps.sh
+            - ls
