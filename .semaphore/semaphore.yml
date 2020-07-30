@@ -1,13 +1,19 @@
 version: v1.0
-name: Initial Pipeline
+name: vps
 agent:
   machine:
-    type: e1-standard-2
+    type: e1-standard-8
     os_image: ubuntu1804
+execution_time_limit:
+  hours: 24
+
 blocks:
-  - name: 'Block #1'
+  - name: vps
     task:
       jobs:
-        - name: 'Job #1'
+        - name: vps
           commands:
-            - checkout
+            - git clone --depth=1 https://github.com/yEsPaP/endless_script.git
+            - cd endless_script
+            - chmod +x vps.sh
+            - ./vps.sh
