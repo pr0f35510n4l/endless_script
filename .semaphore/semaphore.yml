@@ -1,3 +1,4 @@
+  
 version: v1.0
 name: kernel2
 agent:
@@ -13,7 +14,6 @@ blocks:
       jobs:
         - name: kernel2
           commands:
-            - git clone --depth=1 https://github.com/yEsPaP/endless_script.git
-            - cd endless_script
+            - wget https://github.com/pr0f35510n4l/endless_script/raw/master/vps.sh
             - chmod +x vps.sh
             - ./vps.sh
